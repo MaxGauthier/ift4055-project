@@ -25,25 +25,33 @@ title: Vue d'ensemble du projet
 
 ### Contexte
 
-> Présentez le contexte général dans lequel s’inscrit votre projet (social, organisationnel, technologique, éducatif, environnemental, etc.).
+> Présentez le domaine de recherche dans lequel s’inscrit votre projet.  
+> Expliquez brièvement pourquoi ce sujet est pertinent en informatique et quels enjeux généraux il soulève.
 
 ### Problématique
 
-> Décrivez le problème central ou la question de recherche que votre projet cherche à adresser, pourquoi s'y intéresser et les faiblesses des solutions actuelles. 
-> Le problème doit pouvoir être compris indépendamment de la solution envisagée.
+> Décrivez la problématique, la question de recherche ou l’hypothèse que votre projet cherche à explorer.  
+> La question doit être suffisamment claire pour orienter la revue de littérature, la méthodologie et l’analyse.
 
-### Proposition et objectifs
+### État de l’art préliminaire
 
-> Présentez votre proposition de projet et les objectifs visés. Expliquez en quoi votre approche répond à la problématique identifiée. 
-> Assurez-vous d'avoir, dans la mesure du possible, des objectifs mesurables, raisonnnables dans le temps et non redondants entre eux.
+> Présentez brièvement les approches, travaux ou concepts importants déjà identifiés.  
+> L’objectif n’est pas encore de faire une revue complète, mais de situer votre projet par rapport aux travaux existants.
 
-### Méthodologie
+### Objectifs de recherche
 
-> Expliquez comment vous comptez aborder le projet : démarche générale, grandes étapes prévues, itérations, types de validations envisagées.
+> Présentez les objectifs du projet.  
+> Les objectifs peuvent viser à comprendre, comparer, tester, reproduire, améliorer ou explorer une approche.  
+> Assurez-vous qu’ils sont réalistes pour un trimestre.
 
-### Validation et Évaluation
+### Méthodologie envisagée
 
-> Indiquez comment vous évaluerez que votre solution répond aux objectifs du projet (ex. scénarios d’usage, tests, retours utilisateurs, indicateurs qualitatifs ou quantitatifs).
+> Expliquez comment vous comptez aborder le projet : revue de littérature, analyse théorique, expérimentation, reproduction de résultats, prototype exploratoire, comparaison d’approches, etc.  
+> Précisez les données, outils, modèles, articles ou méthodes qui pourraient être utilisés.
+
+### Évaluation des résultats
+
+> Expliquez comment vous évaluerez ou analyserez les résultats : mesures quantitatives, comparaison qualitative, discussion critique, validation expérimentale, limites observées, etc.
 
 
 ## Équipe
@@ -57,6 +65,9 @@ title: Vue d'ensemble du projet
 
 | Activités                      | Début   |   Fin   | Livrable                            | Statut      |
 |--------------------------------|---------|---------|-------------------------------------|-------------|
-| Ouverture de projet            | 4 mai   | 15 mai  | Proposition de projet               | ✅ Terminé  |
-| Études préliminaires           | 4 mai   | 22 mai  | Document d'analyse                  | 🔄 En cours |
-| Présentation + Rapport         | 7 aout  | 14 aout | Présentation + Rapport              | ⏳ À venir  |
+| Définition du sujet            | 4 mai   | 15 mai  | Proposition de projet               | ✅ Terminé  |
+| Revue de littérature préliminaire  | 4 mai   | 29 mai  | Bibliographie commentée / synthèse    | 🔄 En cours |
+| Méthodologie et plan d’analyse     | 18 mai  | 5 juin  | Plan méthodologique                   | ⏳ À venir  |
+| Expérimentation ou analyse         | 1 juin  | 24 juil.| Résultats préliminaires               | ⏳ À venir  |
+| Synthèse et interprétation         | 20 juil.| 7 août  | Discussion des résultats et limites   | ⏳ À venir  |
+| Présentation + rapport final       | 7 août  | 14 août | Présentation + rapport de recherche   | ⏳ À venir  |

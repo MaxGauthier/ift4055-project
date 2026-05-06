@@ -1,11 +1,11 @@
-# Template de site web pour IFT3150 (Projet informatique)
+# Template de site web pour IFT4055 (Projet informatique honor)
 
-Ce répertoire contient un template de site web de projet pour le cours IFT3150, construit avec [MkDocs](https://www.mkdocs.org/) et le thème [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+Ce répertoire contient un template de site web de projet pour le cours IFT4055, construit avec [MkDocs](https://www.mkdocs.org/) et le thème [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
 Ce site sert à :
 
 - documenter le projet tout au long de la session,
-- structurer les livrables (description, suivi, résumé, rapport),
+- structurer les livrables (description, suivi, rapport),
 - centraliser le travail de l’équipe dans un format clair et accessible.
 
 ## Prérequis
@@ -73,9 +73,10 @@ mkdocs gh-deploy
 .
 ├── docs/                # Contenu du site (Markdown)
 │   ├── index.md         # Vue d’ensemble du projet
-│   ├── suivi.md         # Suivi détaillé (hebdo / bi-hebdo)
-│   ├── resume.md        # Résumé final du projet
-│   └── rapport/         # Rapport final (sections)
+│   ├── suivi.md         # Suivi détaillé du projet
+│   ├── analyse.md       # Notes sur l'étude préliminaire
+│   ├── realisation.md   # Notes sur le travail réalisé
+│   └── evaluation.md    # Notes sur l'évaluation du travail
 ├── mkdocs.yml           # Configuration du site et navigation
 ├── requirements.txt     # Dépendances Python
 └── site/                # Site généré (créé lors de la construction)
