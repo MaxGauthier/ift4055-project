@@ -1,0 +1,1079 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Template de site web pour le cours IFT4055">
+      
+      
+        <meta name="author" content="Louis-Edouard Lafontant">
+      
+      
+        <link rel="canonical" href="https://ift4055-template.github.io/">
+      
+      
+      
+        <link rel="next" href="suivi/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Vue d'ensemble du projet - Site de suivi IFT4055</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vue-densemble-du-projet" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="." title="Site de suivi IFT4055" class="md-header__button md-logo" aria-label="Site de suivi IFT4055" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Site de suivi IFT4055
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vue d'ensemble du projet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Partager" aria-label="Partager" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ift4055-template/ift4055-template.github.io" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ift4055-template
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Vue d'ensemble
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="suivi/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Suivi
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="analyse/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Études préliminaires
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="realisation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Réalisation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="evaluation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Évaluation
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Site de suivi IFT4055" class="md-nav__button md-logo" aria-label="Site de suivi IFT4055" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Site de suivi IFT4055
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ift4055-template/ift4055-template.github.io" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ift4055-template
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vue d'ensemble
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vue d'ensemble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description-du-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description du projet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description du projet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problematique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problématique
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etat-de-lart-preliminaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        État de l’art préliminaire
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objectifs-de-recherche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objectifs de recherche
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methodologie-envisagee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthodologie envisagée
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-des-resultats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Évaluation des résultats
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Équipe
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#echeancier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Échéancier
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Références
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="suivi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suivi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="analyse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Études préliminaires
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="realisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Réalisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Évaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description-du-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description du projet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description du projet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problematique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problématique
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etat-de-lart-preliminaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        État de l’art préliminaire
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objectifs-de-recherche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objectifs de recherche
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methodologie-envisagee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthodologie envisagée
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-des-resultats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Évaluation des résultats
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Équipe
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#echeancier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Échéancier
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Références
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<style>
+    @media screen and (min-width: 76em) {
+        .md-sidebar--primary {
+            display: none !important;
+        }
+    }
+</style>
+
+<h1 id="vue-densemble-du-projet">Vue d'ensemble du projet<a class="headerlink" href="#vue-densemble-du-projet" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Informations générales</p>
+<p><strong>Session</strong>: Été 2026<br />
+<strong>Auteur(s)</strong>: Maxime Gauthier 20315695<br />
+<strong>Thème(s)</strong>: Human centered AI, memory system AI agents<br />
+<strong>Superviseur(s)</strong>: Bang Liu, Xiaoqiang Wang</p>
+</div>
+<h2 id="description-du-projet">Description du projet<a class="headerlink" href="#description-du-projet" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><img alt="💡" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f4a1.png" title=":bulb:" /> N'oubliez pas d'effacer ou mettre en commentaires les notes (<code>&gt;</code>) en début de section</p>
+</blockquote>
+<h3 id="contexte">Contexte<a class="headerlink" href="#contexte" title="Permanent link">&para;</a></h3>
+<p>Ces deux dernières années ont été marquées par l'essor des agents d'intelligence artificielle. Ces systèmes sont capables d'exécuter de manière autonome une multitude de tâches pour alléger le travail cognitif et exécutif de l'humain. Si leur efficacité ouvre des perspectives considérables en matière de productivité, leur usage soulève néanmoins une problématique souvent négligée. La délégation systématique des tâches à un agent peut nuire à l'apprentissage de l'humain.</p>
+<p>En effet, lorsqu'un agent prend en charge l'intégralité d'un processus, l'utilisateur n'est plus exposé aux étapes de raisonnement, d'essai-erreur et de structuration des connaissances qui forge les compétences de l'humain. Un enjeu majeur est une fois que l'agent atteint les limites de ces capacités. L'humain, n'ayant pas développé les compétences nécessaires, se retrouve face à des situations dont il est incapable de résoudre dû au manque de compétence. Il donc essentiel d'intégrer à la conception des agents IA la dimension du développement humain, et non uniquement l'optimisation de la performance de l'agent.</p>
+<blockquote>
+<p>Présentez le domaine de recherche dans lequel s’inscrit votre projet.<br />
+Expliquez brièvement pourquoi ce sujet est pertinent en informatique et quels enjeux généraux il soulève.</p>
+</blockquote>
+<h3 id="problematique">Problématique<a class="headerlink" href="#problematique" title="Permanent link">&para;</a></h3>
+<p>Un agent qui considère la dimension du développement humain consiste a s'adapter aux interactions, au profil et à l'évolution de ce dernier. Pour ce faire, on explore le framework 6C (Bang Liu, 2026) qui définit la modélisaiton de l'utilisateur que l'agent doit connaitre. </p>
+<p>L'enjeu majeur dans l'implémentation d'un tel agent est la conception d'un système mémoire suffisament expressif et structuré permettant de bien modéliser l'utilisateur selon ce framewok. Ainsi, la question que ce projet aborde est la suivante: Comment concevoir un système mémoire d'un agent dont la structure favorise l'évolution des compétences de l'humain. </p>
+<blockquote>
+<p>Décrivez la problématique, la question de recherche ou l’hypothèse que votre projet cherche à explorer.<br />
+La question doit être suffisamment claire pour orienter la revue de littérature, la méthodologie et l’analyse.</p>
+</blockquote>
+<h3 id="etat-de-lart-preliminaire">État de l’art préliminaire<a class="headerlink" href="#etat-de-lart-preliminaire" title="Permanent link">&para;</a></h3>
+<p>Le projet se situe à l'intersection de trois sujets complémentaires. Premièrement, concernant la <strong>mémoire agentique</strong>, la majorité des travaux récents s'intéresse aux différentes méthodes d'améliorer la limite de la fenêtre de contexte des grands modèles de langage (LLM) en lui adjoignant une couche persistante. Par exemple, MemGPT (Packer et al., 2023) traite le contexte comme une mémoire vive paginée, Mem0 (Chhikara et al., 2025) sépare extraction et récupération, A-MEM (Xu et al., 2025) propose une mémoire dynamiquement restructurable de type Zettelkasten. Puis,  l'enquête <em>Memory in the Age of AI Agents</em> (Hu et al., 2026) propose une taxonomie à trois dimensions à propos de la mémoire agentique et définit clairement l'ensemble du domaine de la mémoire des agents IA. Ces systèmes sont évalués sur des benchmarks dédiés tels que LongMemEval (Wu et al., 2024), mais demeurent largement indiférents au profil de l'utilisateur. Deuxièmement, les recherches dont les agents tentent d'ancrer ces architectures dans la <strong>cognition humaine</strong> : CoALA (Sumers et al., 2023) reprend les modules mémoire des architectures cognitives classiques, Hou et al. (2024) introduisent une dynamique de consolidation temporelle inspirée du rappel humain, et Pan et al. (2026) propose un paradigme de gestion de mémoire centrée sur l'humain dans lequel les souvenirs persnonels devients des actifs numériques persistant. Enfin, la <strong>psychologie de l'apprentissage</strong> identifie les conditions effectives du développement des compétences, soit la pratique de récupération et la pratique distribuée (Dunlosky et al., 2013) et (Roediger et Karpicke, 2006), les désirables difficultées qui est utile pour savoir comment créer un contexte propice à l'apprentissage, (Bjork et Bjork, 2011), le monitoring métacognitif (Flavell, 1979), et plusieurs autres.  Les architectures mémoire actuelles n'intègrent pas de représentation explicite de l'apprenant, et les modèles cognitifs de l'apprentissage humain ne sont pas présente dans les agents IA. Le projet inspiré de la réflexion Human_centered_agent de Bang Liu vise précisément cette intersection, en concevant une mémoire orientée sur le cadre 6C de AI2HI.</p>
+<blockquote>
+<p>Présentez brièvement les approches, travaux ou concepts importants déjà identifiés.<br />
+L’objectif n’est pas encore de faire une revue complète, mais de situer votre projet par rapport aux travaux existants.</p>
+</blockquote>
+<h3 id="objectifs-de-recherche">Objectifs de recherche<a class="headerlink" href="#objectifs-de-recherche" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Établir un cadre théorique</strong> de la mémoire des agents d'intelligence artificielle, en caractérisant ses différentes formes et en explorant ces différentes formes pour établir la plus adapté à l'objectif principal du projet. (volet mémoire)</li>
+<li><strong>Étudier les mécanismes</strong> par lesquels un agent IA peut contribuer à l'apprentissage et à l'amélioration des compétences de l'humain qui l'utilise. (volet sciences cognitives)</li>
+<li><strong>Concevoir et implémenter une amélioration</strong> du système de mémoire d'un agent open source existant, de manière à l'orienter explicitement vers le développement de l'utilisateur.</li>
+<li><strong>Évaluer empiriquement</strong> le système de mémoire proposé en le comparant à l'architecture mémoire originale de l'agent. </li>
+</ol>
+<blockquote>
+<p>Présentez les objectifs du projet.<br />
+Les objectifs peuvent viser à comprendre, comparer, tester, reproduire, améliorer ou explorer une approche.<br />
+Assurez-vous qu’ils sont réalistes pour un trimestre.</p>
+</blockquote>
+<h3 id="methodologie-envisagee">Méthodologie envisagée<a class="headerlink" href="#methodologie-envisagee" title="Permanent link">&para;</a></h3>
+<p>Le projet se déroule en deux phases successives. La première phase, théorique, consiste en une revue de littérature structurée autour de la taxonomie mémoire de Wu et al. (2025) et du cadre 6C, afin d'identifier les composantes mémoire les plus pertinentes pour modéliser les compétences de l'utilisateur. La seconde phase, pratique, consiste à modifier le système mémoire d'un agent conversationnel open source existant, soit Hermes, pour que le système mémoire soit alignée sur les dimensions du modèle 6C. Cette modification s'appuiera sur les primitives identifiées dans la littérature (pratique de récupération, espacement, charge cognitive, ...) pour guider la structure et les mécanismes de mise à jour de la mémoire. Les articles sont les mêmes que ceux mentionné plus haut et plus encore au fil de la recherche. </p>
+<p>(Voir plus dans la section analyse)</p>
+<blockquote>
+<p>Expliquez comment vous comptez aborder le projet : revue de littérature, analyse théorique, expérimentation, reproduction de résultats, prototype exploratoire, comparaison d’approches, etc.<br />
+Précisez les données, outils, modèles, articles ou méthodes qui pourraient être utilisés.</p>
+</blockquote>
+<h3 id="evaluation-des-resultats">Évaluation des résultats<a class="headerlink" href="#evaluation-des-resultats" title="Permanent link">&para;</a></h3>
+<p>L'évaluation se fait sous deux angles complémentaires.</p>
+<p><strong>Régression/amélioration sur benchmarks mémoire existants.</strong> Le système mémoire modifié de Hermes sera comparé à son architecture originale sur des benchmarks établis tels que LongMemEval (Wu et al., 2024) et LoCoMo. L'objectif est de voir si les modifications introduisent des régressions sur les capacités mémoire orienté dévelopement humain de l'agent (extraction, récupération, raisonnement multi-session) ou l'améliore.</p>
+<p><strong>Qualité de la modélisation de l'utilisateur.</strong> Il n'existe pas à ce jour de benchmark standardisé évaluant directement la fidélité d'un agent à modéliser les compétences d'un apprenant selon un cadre comme le 6C. L'approche envisagée consiste à construire une évaluation synthétique : des profils d'utilisateurs fictifs sont générés avec un niveau de compétence connu (<em>ground truth</em>) selon les dimensions du modèle 6C, et l'agent interagit avec ces profils simulés sur plusieurs sessions. La qualité de modélisation est ensuite mesurée par l'écart entre l'état mémoire inféré par l'agent et le profil de référence. Cette approche s'inspire des protocoles de <em>knowledge tracing</em> (ASSISTments, EdNet) adaptés au cadre conversationnel. Le protocole précis de simulation et les métriques d'alignement seront plus approfondi une fois le projet plus avancés.</p>
+<blockquote>
+<p>Expliquez comment vous évaluerez ou analyserez les résultats : mesures quantitatives, comparaison qualitative, discussion critique, validation expérimentale, limites observées, etc.</p>
+</blockquote>
+<h2 id="equipe">Équipe<a class="headerlink" href="#equipe" title="Permanent link">&para;</a></h2>
+<p>En plus du superviseur, Xiaoqiang Wang, un étudiant au doctorat de ce dernier, co-supervisera mon projet.</p>
+<blockquote>
+<p>Présentez les membres de l’équipe et le rôle principal de chacun dans le projet.</p>
+</blockquote>
+<h2 id="echeancier">Échéancier<a class="headerlink" href="#echeancier" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Le suivi complet est disponible dans la page <a href="suivi/">Suivi de projet</a>.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Activités</th>
+<th>Début</th>
+<th>Fin</th>
+<th>Livrable</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Définition du sujet</td>
+<td>4 mai</td>
+<td>22 mai</td>
+<td>Proposition de projet</td>
+<td>✅ Terminé</td>
+</tr>
+<tr>
+<td>Revue de littérature préliminaire</td>
+<td>4 mai</td>
+<td>29 mai</td>
+<td>Bibliographie commentée / synthèse</td>
+<td>🔄 En cours</td>
+</tr>
+<tr>
+<td>Méthodologie et plan d’analyse</td>
+<td>18 mai</td>
+<td>5 juin</td>
+<td>Plan méthodologique</td>
+<td>⏳ À venir</td>
+</tr>
+<tr>
+<td>Expérimentation ou analyse</td>
+<td>1 juin</td>
+<td>24 juil.</td>
+<td>Résultats préliminaires</td>
+<td>⏳ À venir</td>
+</tr>
+<tr>
+<td>Synthèse et interprétation</td>
+<td>20 juil.</td>
+<td>7 août</td>
+<td>Discussion des résultats et limites</td>
+<td>⏳ À venir</td>
+</tr>
+<tr>
+<td>Présentation + rapport final</td>
+<td>7 août</td>
+<td>14 août</td>
+<td>Présentation + rapport de recherche</td>
+<td>⏳ À venir</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">Références<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Packer et al. (2023). <a href="https://arxiv.org/abs/2310.08560">MemGPT: Towards LLMs as Operating Systems</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Chhikara et al. (2025). <a href="https://github.com/mem0ai/mem0">Mem0: The Memory Layer for AI Agents</a>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Xu et al. (2025). <a href="https://arxiv.org/abs/2502.12110">A-MEM: Dynamically Restructurable Memory for LLM Agents</a>.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Hu et al. (2025). <a href="https://arxiv.org/abs/2512.13564">Memory in the Age of AI Agents</a>.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Wu et al. (2024). <a href="https://arxiv.org/abs/2410.10813">LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory</a>.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>Sumers et al. (2023). <a href="https://arxiv.org/abs/2309.02427">Cognitive Architectures for Language Agents (CoALA)</a>.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>Hou et al. (2024). <a href="https://arxiv.org/html/2410.13553v1">Integrating Temporal Representations for Dynamic Memory Retrieval and Management in Large Language Models</a>.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>Pan et al. (2026). <a href="https://arxiv.org/abs/2603.14212">Memory as Asset: From Agent-centric to Human-centric Memory Management</a>.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>Dunlosky et al. (2013). <a href="https://www.whz.de/fileadmin/lehre/hochschuldidaktik/docs/dunloskiimprovingstudentlearning.pdf">Improving Students’ Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology</a>.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>Roediger &amp; Karpicke (2006). <a href="http://psychnet.wustl.edu/memory/wp-content/uploads/2018/04/Roediger-Karpicke-2006_PPS.pdf">The Power of Testing Memory</a>.&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:11">
+<p>Bjork &amp; Bjork (2011). <a href="https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/04/EBjork_RBjork_2011.pdf">Making Things Hard on Yourself, But in a Good Way: Desirable Difficulties to Enhance Learning</a>.&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:13">
+<p>Sweller (2010). <a href="https://www.emrahakman.com/wp-content/uploads/2024/10/Cognitive-Load-Sweller-2011.pdf">Element Interactivity and Cognitive Load Theory</a>.&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:14">
+<p>Flavell (1979). <a href="https://jgregorymcverry.com/readings/flavell1979MetacognitionAndCogntiveMonitoring.pdf">Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry</a>.&#160;<a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:15">
+<p>Bang Liu. <a href="https://github.com/chatsci/Human-Centered-Agent/blob/main/paper/Human_Centered_Agent.pdf">Human-Centered Agents: From Delegation to Human Growth</a>.&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 <b>DIRO</b> &ndash; Template de site pour le cours IFT4055 <br>Département d'informatique et de recherche opérationnelle <br>Université de Montréal
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.suggest", "search.share", "content.tabs.link", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
