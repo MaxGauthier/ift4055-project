@@ -510,6 +510,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Références
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -531,17 +542,6 @@
     <span class="md-ellipsis">
       
         Échéancier
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Références
       
     </span>
   </a>
@@ -768,6 +768,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Références
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -789,17 +800,6 @@
     <span class="md-ellipsis">
       
         Échéancier
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Références
       
     </span>
   </a>
@@ -843,29 +843,14 @@
 <strong>Superviseur(s)</strong>: Bang Liu, Xiaoqiang Wang</p>
 </div>
 <h2 id="description-du-projet">Description du projet<a class="headerlink" href="#description-du-projet" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p><img alt="💡" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f4a1.png" title=":bulb:" /> N'oubliez pas d'effacer ou mettre en commentaires les notes (<code>&gt;</code>) en début de section</p>
-</blockquote>
 <h3 id="contexte">Contexte<a class="headerlink" href="#contexte" title="Permanent link">&para;</a></h3>
 <p>Ces deux dernières années ont été marquées par l'essor des agents d'intelligence artificielle. Ces systèmes sont capables d'exécuter de manière autonome une multitude de tâches pour alléger le travail cognitif et exécutif de l'humain. Si leur efficacité ouvre des perspectives considérables en matière de productivité, leur usage soulève néanmoins une problématique souvent négligée. La délégation systématique des tâches à un agent peut nuire à l'apprentissage de l'humain.</p>
 <p>En effet, lorsqu'un agent prend en charge l'intégralité d'un processus, l'utilisateur n'est plus exposé aux étapes de raisonnement, d'essai-erreur et de structuration des connaissances qui forge les compétences de l'humain. Un enjeu majeur est une fois que l'agent atteint les limites de ces capacités. L'humain, n'ayant pas développé les compétences nécessaires, se retrouve face à des situations dont il est incapable de résoudre dû au manque de compétence. Il donc essentiel d'intégrer à la conception des agents IA la dimension du développement humain, et non uniquement l'optimisation de la performance de l'agent.</p>
-<blockquote>
-<p>Présentez le domaine de recherche dans lequel s’inscrit votre projet.<br />
-Expliquez brièvement pourquoi ce sujet est pertinent en informatique et quels enjeux généraux il soulève.</p>
-</blockquote>
 <h3 id="problematique">Problématique<a class="headerlink" href="#problematique" title="Permanent link">&para;</a></h3>
 <p>Un agent qui considère la dimension du développement humain consiste a s'adapter aux interactions, au profil et à l'évolution de ce dernier. Pour ce faire, on explore le framework 6C (Bang Liu, 2026) qui définit la modélisaiton de l'utilisateur que l'agent doit connaitre. </p>
 <p>L'enjeu majeur dans l'implémentation d'un tel agent est la conception d'un système mémoire suffisament expressif et structuré permettant de bien modéliser l'utilisateur selon ce framewok. Ainsi, la question que ce projet aborde est la suivante: Comment concevoir un système mémoire d'un agent dont la structure favorise l'évolution des compétences de l'humain. </p>
-<blockquote>
-<p>Décrivez la problématique, la question de recherche ou l’hypothèse que votre projet cherche à explorer.<br />
-La question doit être suffisamment claire pour orienter la revue de littérature, la méthodologie et l’analyse.</p>
-</blockquote>
 <h3 id="etat-de-lart-preliminaire">État de l’art préliminaire<a class="headerlink" href="#etat-de-lart-preliminaire" title="Permanent link">&para;</a></h3>
 <p>Le projet se situe à l'intersection de trois sujets complémentaires. Premièrement, concernant la <strong>mémoire agentique</strong>, la majorité des travaux récents s'intéresse aux différentes méthodes d'améliorer la limite de la fenêtre de contexte des grands modèles de langage (LLM) en lui adjoignant une couche persistante. Par exemple, MemGPT (Packer et al., 2023) traite le contexte comme une mémoire vive paginée, Mem0 (Chhikara et al., 2025) sépare extraction et récupération, A-MEM (Xu et al., 2025) propose une mémoire dynamiquement restructurable de type Zettelkasten. Puis,  l'enquête <em>Memory in the Age of AI Agents</em> (Hu et al., 2026) propose une taxonomie à trois dimensions à propos de la mémoire agentique et définit clairement l'ensemble du domaine de la mémoire des agents IA. Ces systèmes sont évalués sur des benchmarks dédiés tels que LongMemEval (Wu et al., 2024), mais demeurent largement indiférents au profil de l'utilisateur. Deuxièmement, les recherches dont les agents tentent d'ancrer ces architectures dans la <strong>cognition humaine</strong> : CoALA (Sumers et al., 2023) reprend les modules mémoire des architectures cognitives classiques, Hou et al. (2024) introduisent une dynamique de consolidation temporelle inspirée du rappel humain, et Pan et al. (2026) propose un paradigme de gestion de mémoire centrée sur l'humain dans lequel les souvenirs persnonels devients des actifs numériques persistant. Enfin, la <strong>psychologie de l'apprentissage</strong> identifie les conditions effectives du développement des compétences, soit la pratique de récupération et la pratique distribuée (Dunlosky et al., 2013) et (Roediger et Karpicke, 2006), les désirables difficultées qui est utile pour savoir comment créer un contexte propice à l'apprentissage, (Bjork et Bjork, 2011), le monitoring métacognitif (Flavell, 1979), et plusieurs autres.  Les architectures mémoire actuelles n'intègrent pas de représentation explicite de l'apprenant, et les modèles cognitifs de l'apprentissage humain ne sont pas présente dans les agents IA. Le projet inspiré de la réflexion Human_centered_agent de Bang Liu vise précisément cette intersection, en concevant une mémoire orientée sur le cadre 6C de AI2HI.</p>
-<blockquote>
-<p>Présentez brièvement les approches, travaux ou concepts importants déjà identifiés.<br />
-L’objectif n’est pas encore de faire une revue complète, mais de situer votre projet par rapport aux travaux existants.</p>
-</blockquote>
 <h3 id="objectifs-de-recherche">Objectifs de recherche<a class="headerlink" href="#objectifs-de-recherche" title="Permanent link">&para;</a></h3>
 <ol>
 <li><strong>Établir un cadre théorique</strong> de la mémoire des agents d'intelligence artificielle, en caractérisant ses différentes formes et en explorant ces différentes formes pour établir la plus adapté à l'objectif principal du projet. (volet mémoire)</li>
@@ -873,30 +858,15 @@ L’objectif n’est pas encore de faire une revue complète, mais de situer vot
 <li><strong>Concevoir et implémenter une amélioration</strong> du système de mémoire d'un agent open source existant, de manière à l'orienter explicitement vers le développement de l'utilisateur.</li>
 <li><strong>Évaluer empiriquement</strong> le système de mémoire proposé en le comparant à l'architecture mémoire originale de l'agent. </li>
 </ol>
-<blockquote>
-<p>Présentez les objectifs du projet.<br />
-Les objectifs peuvent viser à comprendre, comparer, tester, reproduire, améliorer ou explorer une approche.<br />
-Assurez-vous qu’ils sont réalistes pour un trimestre.</p>
-</blockquote>
 <h3 id="methodologie-envisagee">Méthodologie envisagée<a class="headerlink" href="#methodologie-envisagee" title="Permanent link">&para;</a></h3>
-<p>Le projet se déroule en deux phases successives. La première phase, théorique, consiste en une revue de littérature structurée autour de la taxonomie mémoire de Wu et al. (2025) et du cadre 6C, afin d'identifier les composantes mémoire les plus pertinentes pour modéliser les compétences de l'utilisateur. La seconde phase, pratique, consiste à modifier le système mémoire d'un agent conversationnel open source existant, soit Hermes, pour que le système mémoire soit alignée sur les dimensions du modèle 6C. Cette modification s'appuiera sur les primitives identifiées dans la littérature (pratique de récupération, espacement, charge cognitive, ...) pour guider la structure et les mécanismes de mise à jour de la mémoire. Les articles sont les mêmes que ceux mentionné plus haut et plus encore au fil de la recherche. </p>
-<p>(Voir plus dans la section analyse)</p>
-<blockquote>
-<p>Expliquez comment vous comptez aborder le projet : revue de littérature, analyse théorique, expérimentation, reproduction de résultats, prototype exploratoire, comparaison d’approches, etc.<br />
-Précisez les données, outils, modèles, articles ou méthodes qui pourraient être utilisés.</p>
-</blockquote>
+<p>Le projet se déroule en deux phases successives. La première phase, théorique, consiste en une revue de littérature structurée autour de la taxonomie mémoire de Hu et al. (2025) et du cadre 6C (Bang Liu, 2026), afin d'identifier les composantes mémoire les plus pertinentes pour modéliser les compétences de l'utilisateur. La seconde phase, pratique, consiste à modifier le système mémoire d'un agent conversationnel open source existant, soit Hermes, pour que le système mémoire soit alignée sur les dimensions du modèle 6C. Cette modification s'appuiera sur les primitives identifiées dans la littérature (pratique de récupération, espacement, charge cognitive, ...) pour guider la structure et les mécanismes de mise à jour de la mémoire. Les articles sont les mêmes que ceux mentionné plus haut et plus encore au fil de la recherche. </p>
 <h3 id="evaluation-des-resultats">Évaluation des résultats<a class="headerlink" href="#evaluation-des-resultats" title="Permanent link">&para;</a></h3>
 <p>L'évaluation se fait sous deux angles complémentaires.</p>
 <p><strong>Régression/amélioration sur benchmarks mémoire existants.</strong> Le système mémoire modifié de Hermes sera comparé à son architecture originale sur des benchmarks établis tels que LongMemEval (Wu et al., 2024) et LoCoMo. L'objectif est de voir si les modifications introduisent des régressions sur les capacités mémoire orienté dévelopement humain de l'agent (extraction, récupération, raisonnement multi-session) ou l'améliore.</p>
 <p><strong>Qualité de la modélisation de l'utilisateur.</strong> Il n'existe pas à ce jour de benchmark standardisé évaluant directement la fidélité d'un agent à modéliser les compétences d'un apprenant selon un cadre comme le 6C. L'approche envisagée consiste à construire une évaluation synthétique : des profils d'utilisateurs fictifs sont générés avec un niveau de compétence connu (<em>ground truth</em>) selon les dimensions du modèle 6C, et l'agent interagit avec ces profils simulés sur plusieurs sessions. La qualité de modélisation est ensuite mesurée par l'écart entre l'état mémoire inféré par l'agent et le profil de référence. Cette approche s'inspire des protocoles de <em>knowledge tracing</em> (ASSISTments, EdNet) adaptés au cadre conversationnel. Le protocole précis de simulation et les métriques d'alignement seront plus approfondi une fois le projet plus avancés.</p>
-<blockquote>
-<p>Expliquez comment vous évaluerez ou analyserez les résultats : mesures quantitatives, comparaison qualitative, discussion critique, validation expérimentale, limites observées, etc.</p>
-</blockquote>
+<h3 id="references">Références<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
 <h2 id="equipe">Équipe<a class="headerlink" href="#equipe" title="Permanent link">&para;</a></h2>
-<p>En plus du superviseur, Xiaoqiang Wang, un étudiant au doctorat de ce dernier, co-supervisera mon projet.</p>
-<blockquote>
-<p>Présentez les membres de l’équipe et le rôle principal de chacun dans le projet.</p>
-</blockquote>
+<p>En plus du superviseur Bang Liu, Xiaoqiang Wang, un étudiant au doctorat de ce dernier, co-supervisera le projet.</p>
 <h2 id="echeancier">Échéancier<a class="headerlink" href="#echeancier" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -957,7 +927,6 @@ Précisez les données, outils, modèles, articles ou méthodes qui pourraient �
 </tr>
 </tbody>
 </table>
-<h2 id="references">Références<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <div class="footnote">
 <hr />
 <ol>
