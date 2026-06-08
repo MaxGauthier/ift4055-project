@@ -516,17 +516,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plan-detaille-du-projet-derniere-date-de-mise-a-jour-22-mai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plan détaillé du projet (dernière date de mise à jour 22 mai)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#structure-suggeree" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -537,6 +526,45 @@
   
     <nav class="md-nav" aria-label="Structure suggérée">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composition-du-systeme-memoire-de-lagent-hermess" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Composition du système mémoire de l'agent Hermess
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Composition du système mémoire de l&#39;agent Hermess">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hermes-dans-la-taxonomie-de-la-memoire-des-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hermes dans la taxonomie de la mémoire des agents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systeme-memoire-ai2hi-agent-selon-le-systeme-memoire-actuel-de-hermes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Système mémoire AI2HI Agent selon le système mémoire actuel de HERMES
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#architecture-modele-ou-demarche-generale" class="md-nav__link">
@@ -660,17 +688,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plan-detaille-du-projet-derniere-date-de-mise-a-jour-22-mai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plan détaillé du projet (dernière date de mise à jour 22 mai)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#structure-suggeree" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -681,6 +698,45 @@
   
     <nav class="md-nav" aria-label="Structure suggérée">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composition-du-systeme-memoire-de-lagent-hermess" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Composition du système mémoire de l'agent Hermess
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Composition du système mémoire de l&#39;agent Hermess">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hermes-dans-la-taxonomie-de-la-memoire-des-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hermes dans la taxonomie de la mémoire des agents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systeme-memoire-ai2hi-agent-selon-le-systeme-memoire-actuel-de-hermes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Système mémoire AI2HI Agent selon le système mémoire actuel de HERMES
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#architecture-modele-ou-demarche-generale" class="md-nav__link">
@@ -775,12 +831,134 @@
 <p><img alt="💡" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f4a1.png" title=":bulb:" /> Cette page documente l’évolution concrète du projet durant le trimestre.
 Elle ne remplace pas le rapport final, mais permet de documenter progressivement le travail effectué, les décisions prises et les principaux résultats obtenus.</p>
 </blockquote>
-<h2 id="plan-detaille-du-projet-derniere-date-de-mise-a-jour-22-mai">Plan détaillé du projet (dernière date de mise à jour 22 mai)<a class="headerlink" href="#plan-detaille-du-projet-derniere-date-de-mise-a-jour-22-mai" title="Permanent link">&para;</a></h2>
 <h2 id="structure-suggeree">Structure suggérée<a class="headerlink" href="#structure-suggeree" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>La structure suivante est donnée à titre indicatif.<br />
 Vous pouvez l’adapter selon votre projet.</p>
 </blockquote>
+<h3 id="composition-du-systeme-memoire-de-lagent-hermess">Composition du système mémoire de l'agent Hermess<a class="headerlink" href="#composition-du-systeme-memoire-de-lagent-hermess" title="Permanent link">&para;</a></h3>
+<p>L'architecture du système mémoire de Hermes est composé de six couches qui collaborent ensemble. 
+- 1) <strong>Couche 1: Mémoire épisodique brute</strong>
+    hermes_state.py implémente une base SQLite (SessionDB) en mode WAL qui stocke de manière brutes toutes les données nécessaires à l'agent. On peut comparer cela à un disque dur. C'est la base du système mémoire, la base de données de la mémoire de l'agent. Le reste des composantes de la mémoire se construisent à partir de cette SessionDB. Celle-ci est composé de 5 tables. 1- table schema_version: pour la gestion interne de la base de données pour garder une trace de la version dans le but de savoir s'il faut migrer des informations, changer les opérations pour satisafire une version plus récente, etc. 2- sessions: On stock les métadonnées d'une session, soit id, source, user_id, model, system_prompt, parent_session_id, token_budget, cost. 3- messages: stock de manière détaillé, sans perte, la trace de chaque message. Plus précisément, le role, content, tool_calls, reasoning, token_count, timestamp sont stockés. 4- state_meta: cette table sert pour stocker les métadonnées de l'état de l'agent, cela agit comme un fichier de condig ou de lock mais pour l'agent. 5- message_fts et messages_fts_trigram: Ce ne sont pas concrètement des tables mais plutôt des index de recherches trextuel. Elles permettent de trouver rapidement un mot parmis des millions de messages sans passer par les requêtes SQL traditionnelles qui rechercherait chaque ligne une à la fois jusqu'à ce que le mot soit trouver. le contenu de ces index sont (1) le contenu du message, (2) le nom de l'outil utilisé dans le message, (3) le ou les arguments d'appel d'outil. messages_fts_trigram est simplement pour les langues asiatiques avec une grammaire différente pour que la recherche fonctionne. Lorsque la table de messages est mise à jour, ces deux index sont automatiques eux aussi mis à jour. Les détails d'implémentation pour ce faire ne sont pas intéressant pour le projet. Ce qui est important est que la mémoire épisodique brute est immuamble grâce au lineage de parent_session_id. Cela permet d'accroite l'efficacité et les coûts de tokens puisque le prompt caching des LLMs est utiliser.</p>
+<ul>
+<li>
+<p>2) <strong>Couche 2: Built-in curated memory</strong>
+    Cette couche est la mémoire explicite persisante de l'agent. C'est un espace affinée de l'autre couche, où l'agent choisi de retenir certaines informations de manière durable. Elle se divise en deux parties. <em>1- la mémoire déclarative (MemoryStore):</em> ce sont des informations persistantes à travers les sessions que l'agent peut utiliser pour diriger ces actions. Il y a (1) MEMORY.md qui note les informations relatives à l'environnement et le projet concerné et (2) USER.md qui note les informations sur l'utilisateur, tous deux avec leur propre limites de caractères . MEMORY.md et USER.md sont sous forme de Token Level 1D, avec des focntions d'environnement et d'utilisateur respectivement. En effet, le format des fichiers sont des entrées uniquie séparer par des symboles pour faciliter l'action de remplacer ou retirer lors de l'évolution. Au début d'une session, un snapshot de ces deux fichiers est pris et c'est ce dernier qui est envoyé en prompt dans le LLM pour profiter due la KV cache. Cependant, au couirs d'une session, même si dans le prompt l'information en change pas, l'agent peut tout de même appelé le memory tool pour modifier les deux fichiers originaux. On décrit plus en détail la contexte window du prompt dans la section [SECTION A DEFINIR]. La limite de caractère force l'agent à mettre à jour les informations lorsque la limite est atteinte pour avoir un portrait à jour de la situation, ce qui améliore les résultats car la qualité est meilleur. <em>2- la mémoire procédurale (Skills):</em> Un skill est une procédure réutilisable pour effectuer une tâche. La mémoire déclarative stocke des faits tandis que la mémoire procédurale stocke des étapes d'action pour effectuer une tâche. Chaque skill est un dossier avec (1) SKILL.md contenant les instruction et (2) un dossier de référence avec les éléments au besoin. Il y a trois types de skills différents: <em>bundled</em> dans le dossier skills du repo HErmes qui sont conçus et géré par les développeur de Hermes, <em>Hub-installed</em> dans le dossier optional-skills géré par le hub puis <em>agent-created</em> qui est dans $HERMES_HOME/skills/ géré par l'agent lui-même. C'est ce dernier qui peuvent être modifier dans le cycle de vie de la mémoire, les autres sont immuables. L'utilisateur peut créer un skill mais il ne sera jamais modifier via le curator. L'agent utilise le <em>skill_manage</em> tool pour écrire le skill.  </p>
+</li>
+<li>
+<p>3) <strong>Couche 3: Working memory</strong>
+    Cette couche s'attarde au problème fondamental d'un LLM, soit sa fenêtre de contexte finie. Elle gère le fonctionemment de cette fenêtre de contexte lors de longue conversation. 
+    Premièrement, lorsque la fenêtre de contexte dépasse sa capacité, l'agent fait appel au <em>ContextEngine</em> et au <em>ContextCompressor</em> pour résoudre le problème. Le ContextEngine définit l'interface que le ContextCompressor doit respecter tel que le moment lorsqu'il faut compresser, comment compresser et mettre à le token count selon les paramètres établies, soit threshold_percent (lorsque la fenêtre est à un tel pourcentage remplit), protect_first_n (protège les n premiers messages qui peuvent avoir une importance accrue par rapport aux autres) et même principe pour les n derniers messages. ContextCompress est celui qui est actif et effectue la compression via l'algo compress(). Premièrement, le compresseur remplace les anciens résulats d'outils par un résumé d'une ligne. Par exemple, dans la conversation, on peut avoir chaque ligne de terminal sur l'exécution d'un script et le compress va faire un résumé de cette exécution. Cela permet de sauver beaucoup de tokens. Deuxièmement, il divise la conversation globale en partie distinctes selon les paramètres établies. Le début (system prompt + n premiers messages) et la fin (n derniers messages) sont séparer du milieu pour les garder intact. De plus, ces frontières sont ajustées pour ne pas couper un appel d'outil ou un résultat d'outil en plein milieu. Troisièmement, la section du milieu de la converstation est résumé via un LLM suivant un template précis. Quatrièmement, dans le cas d'une conversation qui a déjà été compressée et résumée, au lieu de partir à zéro, le prompt au LLM fourni le résumé et demande de le mettre à jour aussi plus la nouvelle conversation pour ne pas perdre cette première partie. Donc chaque couche de compression s'accumule et non s'écrase. Finalement, on ajoute au résumé précédent un préfixe pour empêcher le LLM de réadresser des éléments qui l'ont déjà été. 
+    La deuxième stratégie utilisé est le prompt caching tel que mentionné ci-haut. Les serveurs du LLM utilisé vont analyser chaque prompt pendant une conversation et observé si une partie du prompt est identique à chaque fois. Lorsque c'est le cas, il stock ces valeurs dans le KV-cache, ce qui permet de sauver beaucoup de tokens et de temps. C'est pour cette raison qu'Hermes opte pour un USER.md et MEMORY.md invariant. [PAS OUBLIER DECRIRE LE CONTENU TYPIQUE DE LA FENETRE DE CONTEXTE]</p>
+</li>
+<li>
+<p>4) <strong>Couche 4: l'orchestrateur</strong>
+    Cette couche, le MemoryManager, est responsable de gérer la communication et les fonctions entre l'agent et la mémoire. Le MemoryManager joue cinq rôle différents. <em>1- Enregistrement et contrainte de providers:</em> Il est possible d'ajouter à l'agent des plugins de mémoire comme mem0, honcho, etc. Le rôle de l'orchestrateur est de géré ces providers externes pour qu'ils fonctionnent correctement. Un seul provider est permis pour éviter la confusiuion entre les tools de chacun et éviter les doublons de fait stocker. <em>2- Indexation et routage des appels d'outils:</em> à l'enregistrement du provider, les outils de ce dernier sont indexés par l'orchestrateur. Plus précisément, l'orchestrateur fait le pont entre le LLM et le provider.. Quand le LLM appel un outil d'un provider, l'orchestrateur regarde dans _tool_to_provider et trouve le provider et lui délègue l'appel. <em>3- éventail des hooks du provider:</em> L'orchestrateur expose tous les hooks de MemoryProvider sous forme de méthodes qui itèrent sur tous les providers enregistrés. Cela sert de traduction entre la méthode du provider externe et celui de l'agent pour que les méthodes soit fonctionnelles. <em>4- Isolation de la mémoire injectée:</em> Les providers injectent de la mémoire dans le user message courant et non dans le system prompt pour présercher la cache. Cependant, cette mémoire peut être visible à l'utilisateur et même des réponses mal formatés. Le rôle de l'orchestrateur est de résoudre ceci via la memory-context fence. Les détails ne sont pas important pour le projet. <em>5- Compatibilité ABI:</em> l'orchestrateur s'assure de la compatibilité entre les nouveaux et anciens providers, les détails ne sont pas important pour le projet. </p>
+</li>
+<li>
+<p>5) <strong>Couche 5: Providers externes</strong>
+    Déjà abordé précédemment, cette couche est la mémoire longue durée pluggable. l'agent veut simplement utiliser les pluggins et non comprendre et stocker leur fonctionnement, c'est donc exactement le rôle de MemoryProvider de fournir une interface pour faire cela. MemoryProvider est donc une classe abstraite avec deux catégories de méthodes abstraites. Il y a les méthodes obligatoires et les méthodes du cycles de base. De plus, il y a des hooks optionnels dépendamment du provider spécifique. Hermes à 8 bundled providers qui ont tous une architecture de mémoire et approche différente.  </p>
+</li>
+<li>
+<p>6) <strong>Couche 6: Auto amélioration</strong>
+    Cette couche est ce qui rend l'agent Hermes unique. Hermes s'observe lui-même après chaque interaction et améliore sa propre mémoire sans l'intervention de l'utilsiateur. Pour ce faire, l'agent utilise deux mécanismes distincts ciblant différentes facettes. <em>1- Background Review:</em> Après chaque réponse, l'agent à la possibilité de créer un thread en arrière plan de la conversation pour avoir son historique complet. Puis, l'agent analyze la conversation pour en extraire des informations pertinentes pour soit transformé les informations en un skill ou adapter la mémoire déclarative. L'agent utilise trois types de prompts pour effectuer cela et le nourri au LLM qui va donner le contenu adapté. <em>-2: Curator:</em> Le background review créer des skills au fil des sessions et donc la librairie contient de plus en plus de skills. Certains de ces skills peuvent perdrent en pertinences puisquils sont redondants, trop précis donc peu utilisé ou même non utilisé depuis un certain temps. Cet entretien est effectué automatiquement lorsque l'agent à été inactif depuis un certain temps (2h par défaut) et que la dernière passe remonte à un certain temps (7 jours). Premièrement, il y a une méthode pour parcourir tous les skills agent-created et les évalues temporellement. Lorsque les skills dépassent leur seuil de temps inutilisé pour chaque catégorie, il passe dans l'état suivant. Exemple, si le skill n'a pas été utilisé pendant 90 jours, l'agent le rajoute dans l'archive, au lieu de l'avoir dans la petite banque rapide de skills. Deuxièmement, l'agent effectue une passe de LLM pour identifier parmis les skills de la librairie les groupes de skills similaires puis les consolider en un skill plus général. </p>
+</li>
+</ul>
+<h4 id="hermes-dans-la-taxonomie-de-la-memoire-des-agents">Hermes dans la taxonomie de la mémoire des agents<a class="headerlink" href="#hermes-dans-la-taxonomie-de-la-memoire-des-agents" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>1) <strong>Axe Forme:</strong>
+    1.1 Token Level: 
+        * la mémoire déclarative est 1D
+        * Table messages de SessionDB est 1D
+        * Index FTS5 sont 1D
+        * Certain plugins sont 2D (Huncho, Hindsigth, ...)
+        * Les skills sont stocker sous forme d'arborescence donc 3D
+        * Lineage des sessions de parents ssont en arbres de session donc 3D
+        * Certains plugins sont 3D (ByteRover, OpenViking, ...)
+    1.2 Parametric:
+        * Rien, aucun fine tuining de LLM pour isoler le LLM du système mémoire. De cette façon, le système mémoire fonctionne avec n'importe quel LLM. 
+    1.3 Latent:
+        * Le design de l'agent fait en sorte qu'il utilise le prompt caching qui est une forme de latent memory.</p>
+<p>Le système mémoire Hermes est presque entièrement sous forme de token-level. Surtout, la mémoire déclarative est sous forme 1D.</p>
+</li>
+<li>
+<p>2) <strong>Axe Fonction:</strong>
+    2.1 Mémoire Factuelle:
+        * USER.md est évidemment de type utilisateur factuel
+        * La majorité des providers gardent ont leur forme de mémoire utilisateur factuel
+        * MEMORY.md est de type environnement factuel 
+        * Les fichiers de contexte injectés tel que AGENTS.md, .cursorrules, etc sont de type environnemment factuel 
+    2.2 Mémoire expérientielle:
+        * les messages de SessionDB et session_search_tool sont case-based
+        * Les résumés dans la couche 4 sont strategy-based
+        * Les skills et MCP sont skilled-based
+        * La mise a jour de la librairie de skills est aussi skilled-based
+        * Plusieurs méthodes sont des hybrides. Par exemple, la combinaisaon de MEMORY.md et les skills
+    2.3 Working Memory:
+        * Résumé des outils est Single-turn
+        * compress() de ContextCompressor est multi-turtn
+        * La compression des résumés pour faire dautre résumé c'est multi-turn</p>
+</li>
+<li>
+<p>3) <strong>Axe Dynamique:</strong>
+    3.1 Formation
+        * ContextCompressor produisant SUMMARY_PREFIX via un LLM est la formation d'un résumé sémantique.
+        * Plusieurs providers utilise le knowledge distillation
+        * Hindsight et Holographic providers utilise des concept de constructions structurés (exemple Knowledge graph)
+        * Holographique utilise latent representation
+    3.2 Évolution:
+        * MemoryStore.replace, le curator, et quelques providers effectuent de la consolidation
+        * memory replace, Holographic et Honcho effectuent updating
+        * Remove de MEMORY.md et USER.md, l'archivage de skills inactif du curator et la compression des tours du milieu dans la couche 3  utilisent le mécanisme de forgetting
+    3.3 Retrieval:
+        Suivant le protocole de l'enquête, on a: 
+        3.3.1 Timing &amp; Intent (quand et pourquoi récupérer):
+            * prefetch_all avant chaque appel API est proactif; queue_prefetch_all après chaque tour pré-chauffe le recall du prochain tour en arrière-plan
+            * Le system_prompt_block() de chaque provider injecte des instructions statiques proactives au démarrage
+            * session_search, mem0_search, honcho_search, honcho_reasoning, hindsight_recall, fact_store sont réactifs (appelés par le LLM selon la situation)
+        3.3.2 Construction de la requête:
+            * La requête de prefetch_all est le message original de l'utilisateur avant injection des skills (pour ne pas polluer la recherche)
+            * Aucun rewriting automatique côté cœur; certains providers (Mem0, Hindsight) font du rewriting côté serveur
+        3.3.3 Stratégie de retrieval:
+            * Lexical: FTS5 unicode + FTS5 trigram sur la SessionDB via session_search; BM25 implicite dans FTS5
+            * Sémantique: délégué aux providers via embeddings côté serveur (Mem0, Hindsight, Supermemory, RetainDB); aucun vectorstore local dans le cœur Hermes
+            * Graphe: Holographic avec probe/related/reason sur la table fact_entities; Hindsight entity graph côté serveur
+            * Hybride: RetainDB (Vector + BM25 + reranking); Honcho recall mode hybrid; Hindsight multi-strategy
+            * Génératif: Honcho honcho_reasoning via LLM dialectic multi-pass; Hindsight hindsight_reflect via synthèse LLM
+        3.3.4 Post-retrieval:
+            * Reranking: Mem0 (optionnel), RetainDB et Hindsight (intégré)
+            * Déduplication: par lineage parent_session_id dans session_search; côté serveur dans Mem0
+            * Troncation par budget: Honcho _truncate_to_budget (word-boundary safe); Hindsight recall_max_tokens
+            * Fencing: build_memory_context_block enrobe le résultat dans <memory-context>; StreamingContextScrubber empêche la fuite du bloc en sortie streaming
+            * Injection: dans le user message courant (jamais dans le prompt système) pour préserver le prefix cache</p>
+</li>
+</ul>
+<h4 id="systeme-memoire-ai2hi-agent-selon-le-systeme-memoire-actuel-de-hermes">Système mémoire AI2HI Agent selon le système mémoire actuel de HERMES<a class="headerlink" href="#systeme-memoire-ai2hi-agent-selon-le-systeme-memoire-actuel-de-hermes" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>Cette section présente les changements à apporter au système mémoire de Hermes pour réaliser l&#39;agent AI2HI, en les rattachant aux couches et aux méthodes décrites plus haut. Le système actuel modélise l&#39;utilisateur comme un ensemble plat de faits de surface : USER.md (couche 2) stocke sous forme token-level 1D des informations comme le rôle, les préférences ou le style de communication. L&#39;agent AI2HI vise au contraire à modéliser l&#39;utilisateur comme un profil cognitif structuré et évolutif, basé sur la littérature des sciences cognitives. . Le véhicule de ce changement est un provider local (couche 5) qui remplace le canal de mémoire utilisateur du built-in, USER.md est désactivé (via le drapeau user_profile_enabled dans agent_init.py) pour que le provider soit la source unique du modèle de l&#39;utilisateur. Le provider est privilégier au lieu d&#39;une modification directe du built-in car le MemoryStore de la couche 2 est passif et n&#39;expose aucun hook dynamique, alors que l&#39;interface MemoryProvider de la couche 5 fournit nativement et est déjà câblés dans la boucle de l&#39;agent par l&#39;orchestrateur (couche 4) qui lui fourni les points d&#39;extension de formation, d&#39;évolution et de récupération. Modifier le built-in directement reviendrait à réimplémenter tout ce processus, ce qui n&#39;est pas pertienent pour le projet. Enfin, Il est bien important de bien tracer la frontière de se projet. Il s&#39;occupe uniquement de la mémoire et non des politiques de décisions à propos de comment utilisé cette mémoire.
+</code></pre></div>
+<ul>
+<li>
+<p>1) <strong>Axe Forme: de 1D plat à une structure relationnelle.</strong> 
+    Dans Hermes, USER.md (couche 2) est une suite d'entrées séparées par un délimiteur, plafonnée en caractères et figée en snapshot au début de session. Cette forme n'est pas adapté aux concepts de cogsci qui doivent être stocker en mémoire car ils possèdent intrinsèquement des relations importantes à capturer pour leur bon fonctionnement. Ainsi, le nouveau système déplace le stockage vers un backend structuré possédé par le provider local et créé dans sa méthode initialize() (couche 5). La contrainte 1D demeure néanmoins à la frontière du prompt, puisqu'un LLM ne consomme que du texte. Le provider conserve donc une composante de projection qui sérialise la tranche pertinente de la structure en texte, via system_prompt_block() pour la portion statique et prefetch() pour la portion sélective par tour. </p>
+</li>
+<li>
+<p>2) <strong>Axe Fonction: du fait de surface au modèle cognitif inféré.</strong> 
+    Sur cet axe, la mémoire utilisateur factuelle s'enrichit mais change aussi de nature. Dans le systèmee de Hermes, USER.md relève de la mémoire factuelle utilisateur. Dans le noeuveau système le profil de l'utilisateur est continuellement inféré et mis à jour à partir de l'expérience conversationnelle. Par coséquent, la fonction contient maintenant aussi de l'expérientiel. Concrètement, le provider (couche 5)  étend la fonction qu'occupait USER.md (couche 2). Au lieu de faits de surface, il maintient parmis les concepts cogsci du framework 6C un état du niveau de l'utilisateur, de ses misconceptions et de sa progression. L'objectif AI2HI est que pour scaffolder ou enseigner, l'agent doit disposer d'un modèle du niveau de compétence et des lacunes de l'utilisateur, ce que de simples préférences de surface ne permettent pas. C'est pour cette raison que l'on shift la fonction vers plus d'expérientiel. </p>
+</li>
+<li>
+<p>3) <strong>Axe Dynamique:</strong> 
+    Il faut concevoir, pour chaque dimension cogsci, comment s'opèrent la formation, l'évolution et la récupération, en s'ancrant dans la littérature pour en garantir la fiabilité.
+    3.1 La formation: 
+    À partir des échanges de l'utilisateur avec l'agent, l'agent AI2HI doit inférer l'état cognitif de l'utilisateur. La formation est donc l'inférence du texte brute, en une observation structuré de son état cognitif. Ainsi, après chaque tour (chaque échange) le provider reçoit le prompt utilisateur et la réponse du LLM puis infère les signaux cognitifs à partir de ceux-ci via sync_turn(). De plus, à la fin des sessions, le provider raisonne et extrait les signaux cognitif avec l'historique de la conversation avec la méthode on_session_end(). Il faudra donc implémenter un algorithme d'extraction pour faire cette inférence [À DÉTÉERMINER ET EXPLORER DAVANTAGE]
+    3.2 L'évolution:
+    L'évolution consiste à mettre à jour le signal existant selon une dynamique ancrée en cogsci (knowledge tracing, courbe d'apprentissage, oubli). Une fois que le signal a été formé, sync_turn() fait office de méthode d'évolution. Les stratégies pour mettre en place l'évolution sont encore à définir.
+    3.3 La récupération:
+    L'implémentation d'une récupération sélective et efficace est primordiale car le modèle eut devenir très grand (chaque concept sur tous les sujets possibles peut croitre beaucoup si l'utilisateur utilise beaucoup l'agent sur des années). Ainsi, il faut bien sélectionner car la fenêtre de contexte est limité et une mauvaise récupération peut faire halluciner le LLM. Ainsi, la structure de graphe (forme 3D) est primordiale car la requête de récupération ur un sous-graphe ciblée se fait nauturellement. Pour ce faire, on utilise la méthode prefetch(query) pour obtenir le message de l'utilisateur pour que le provider puisse mapper la requête vers les noeuds pertinents en mémoire [METHODE POUR CE FAIRE A DETERMINER]. Il observe ensuite les estimations courantes de ces noeuds et sérialise en texte pour que le LLM puisse calibrer sa réponse. Comme que prefetch() est appelé avant chaque appel API, il ne faut pas que ce soit cette méthode qui appel le LLM pour faire l'évaluation car chaque tour serait très ralenti. Pour cette raison, on découpe le processus en producteur/consommateur. Une fois que la réponse du LLM est donné, queue_prefetch() effectue le travail lourd pendant que l'utilsateur lit et écrit dans sa réponse dans le tour suivanté. prefetch() va donc uniquement lire le résultat déjà calculer. Cependant, le défaut avec cette technique est qu'on assume que le message suivant à un lien avec le message d'avant puisque qu'on calcul pour un message non existant encore, ce qui est raisonnable car une conversation a tendance à suivre un fil continu. Le premier mesage de la session peut être plus long.
+    Enfin, pour ne pas perdre de signal lorsque la couche 3 compresse la conversation, on capte les données via on_pre_compress(), avant que les messages ne soient résumés, et via on_session_end(), à la fin de la session. Tous ces hooks appartiennent à la couche 5 et sont déjà invoqués par l'orchestrateur (couche 4, méthodes sync_all, prefetch_all, on_pre_compress), ce qui évite toute modification du coeur de Hermes.</p>
+<p><strong>Modifications collatérales et intégration.</strong> Ces changements imposent des ajustements pour préserver la cohérence de Hermes. La désactivation de USER.md doit être propre, faute de quoi un second modèle de l'utilisateur coexisterait et pourrait contredire le provider dans le prompt. Le pont on_memory_write de l'orchestrateur (couche 4), qui répercute les écritures du memory tool vers le provider, doit reconnaître les nouvelles cibles. La surface d'outils exposée au LLM doit être tranchée : conserver le memory tool pour la cible « user » ou le remplacer par des outils de compétence dédiés déclarés via get_tool_schemas(). Il faut enfin éviter de polluer le modèle depuis des contextes non-primaires (cron, subagent) en filtrant sur le paramètre agent_context fourni à initialize().</p>
+</li>
+</ul>
 <h3 id="architecture-modele-ou-demarche-generale">Architecture, modèle ou démarche générale<a class="headerlink" href="#architecture-modele-ou-demarche-generale" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>Présentez l’organisation générale du projet :</p>

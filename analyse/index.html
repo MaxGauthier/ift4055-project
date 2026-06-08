@@ -520,6 +520,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Revue de littérature ou état de l’art">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revue-litterature-sciences-cognitives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revue littérature sciences cognitives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revue-litterature-memoire-agentique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revue littérature mémoire agentique
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -691,6 +719,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Revue de littérature ou état de l’art">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revue-litterature-sciences-cognitives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revue littérature sciences cognitives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revue-litterature-memoire-agentique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revue littérature mémoire agentique
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -785,6 +841,7 @@ Vous pouvez l’adapter selon la nature de votre projet.</p>
 <ul>
 <li>
 <p>0) Agent IA 
+    Un agent consiste typiquement de c'est quatres pilliers: (1) Le cerveau: le LLM qui gère le raisonnement, la planification et la prise de décision. (2) La planification: l'abilit. à l'agent de décomposer un objectif comple en petite étape incrémentales séquentielles. (3) Outils: l'abilité des agents à effectuer des tâches tel que exécuter du code, fouiller sur le web, faire des appels d'api, etc. (4) La mémoire: typique divisé en deux sous catégories, soit la mémooire à court terme pour gérer l'état de la conversation courante, et la mémoire à long terme pour recourir aux interactions passer et pouvoir accéder à une base de données externe. C'est ce quatrième pilier que le projet va explorer. 
     Un Agent IA diffère d'un LLM. On défini un agent IA comme un système qui exécute une boucle d'observation, réflexion , action et observation en continue. La phase de réflexion et d'action est caractérisé par la policy de l'agent. En pratique, la policy est le LLM et un prompt. Donc, la distinction entre un agent IA et un LLM est que le LLM n'est qu'un composante de l'achitecture de l'agent. </p>
 </li>
 <li>
@@ -802,9 +859,47 @@ Vous pouvez l’adapter selon la nature de votre projet.</p>
 </li>
 </ul>
 <h3 id="revue-de-litterature-ou-etat-de-lart">Revue de littérature ou état de l’art<a class="headerlink" href="#revue-de-litterature-ou-etat-de-lart" title="Permanent link">&para;</a></h3>
-<p><strong>Memory in the Age of AI Agents</strong> Hu et al. (2025)</p>
-<p>Cette enquête est la fondation du projet grâce la définition extrêment complète du domaine de la mémoire présentée. C'est donc la référence de base sur laquelle les idées émergent pour concevoir le système mémoire approprié aux objectifs du projet. </p>
-<p>**</p>
+<h4 id="revue-litterature-sciences-cognitives">Revue littérature sciences cognitives<a class="headerlink" href="#revue-litterature-sciences-cognitives" title="Permanent link">&para;</a></h4>
+<p>La section suivante énoncera le titre de l'article ainsi que sa le concept principal et comment il est pertinent dans le cycle de notre agent IA AI2HI basé sur le framework 6C. Pour chaque article, la dimension du framework 6C touché est indiquée.</p>
+<p><em>Distributed Practice in Vebal Recall Tasks: A Review and Quantitative Synthesis, (Cepada et al, 2006) - </em><em>Compétence</em>**</p>
+<p>Cette recherche est le pilier de l'effet d'espacement qui est un phénomène selon lequel l'apprentissage et la mémorisation sont accentués lorsque les séances d'études sont réparties dans le temps au lieu d'une longue séance. Plu précisément, les auteurs démontrent que la rétention d'information respecte le ratio suivant: le temps entre les sessions d'études et l'intervalle de rétention. Autrement dit, il faut trouver le ratio optimale entre le temps d'attente parmis les sessions et leur longeur. Attendre trop et faire de trop longues sessions est mauvais. 
+Donc, dans l'agent AI2HI, il faut prendre en considération (1) la longueur des sessions lorsqu'elles sont à propos d'un sujet dans la frontière des connaissances de l'utilisateur et (2) le temps depuis une session en lien avec ce sujet. </p>
+<p><em>Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention, (Roediger et Karpicke, 2006)</em><em>Contrôle et Compétence</em>**</p>
+<p>Cette recherche explore l'effet de test, phénomène selon lequel recueillir l'information lors d'une évalutation ou un test améliore de manière significative la rétention des informations plutôt que de réétudier celles-ci sur le long terme, ce qui est l'objectif pour le développement de l'humain. De plus, les cobayes ont affirmés être plus confiant dans leur rétention d'informations en reétudiant plutot qu'avec le test, signifiant que la perception de retention de l'humain n'est pas fiable. (On le mentionne, bien que ce n'est pas dans le scope du projet, c'est un facteur essentiel à prendre en compte dans l'implékmentation de la politique de décision pour choisir quel type d'agent doit prendre le dessus dépendamment de la situation)
+Ainsi, ce qu'il faut retenir est que l'acte de puiser dans sa mémoire est extrêmement bénéfique au développement de l'humain et c'est donc un comportement que l'on veut encourager dans les discussions avec l'agent AI2HI. Le système mémoire doit donc garder une trace du nombre de fois que l'utilisateur à fait un rappel à sa mémoire à propos d'un certain sujet pour ensuite permettre au mécanisme de décision de l'agent (out of scope pour ce projet) de modifier sa réponse en fonction de cette trace. (Par exemple, lorsque le compteur est bas pour le sujet discuter, modifier la réponse pour favoriser l'utilisateur à puiser dans sa mémoire.) </p>
+<p><em>Improving Students' Learning With Effective Learning Techniques, (Dunlosky et al, 2013)</em><em>Compétence</em>**</p>
+<p>Cet article présente 10 techniques d'apprentissages pour maximiser 4 critères, soit l'efficacité, la généralisabilité, faisabilité et les conditions aux frontières d'apprentissages. L'article conclut que l'effet d'espacement et l'effet de test sont les deux meilleures techniques pour maximiser l'apprentissage d'un concept. Cette recherche appui le propos et justifie avec plus de crédibilité le choix d'implémenter ces deux concepts ci-haut.</p>
+<p><em>Making Things Hard on Yourself, but in a Good Way: Creating Desirable Difficulties to Enhance Learning, (Bjork et Bjork, 2011) </em><em>Compétence</em>**</p>
+<p>Cet article explore les effets des techniques d'apprentissages, dont les deux ci-haut, et affirme que ces deux techniques sont plus dur sur le mental des apprenants sur le moment, mais produit de meilleur résulats d'apprentissage sur le long terme. Ils généralisent en deux familles les techniques d'apprentissages: 1-techniques intuitives, soit la relecture, regrouper des séances d'études ensemble avant un examen (massing), étudier un sujet très spécifique par session d'étude puis passer au suivant (blocking), etc. 2-Techniques optimales aussi nommé "Desirable difficulties" qui inclut l'effet d'espacement (spacing) et l'effet de test (testing). Pouir faire partie de cette famille, il faut deux facteurs, soit (1) la capacité de retenir l'information a long terme (storage strength) et (2) la capacité à se mémorer l'information (retrieval strength). l'étude affirme que le fait de se remémorer l'information n'est pas suffisant, il faut avoir eu une certaine complexité à le faire. Se remémorer une infortmation instantalanément améliore faiblement la capacité à retenir l'information. Ceci est important dans  façon dont le système mémoire doit implémenter retreival strength.
+Ainsi, cet article est utile car il raffine comment bien implémenter le retrival dans le système mémoire et comment modeliser le degre de compétence de l'utilisateur selon le concept. Très utile pour la politique de choix d'agent</p>
+<p><em>Element Interactivity and Intrinsic, Extraneous, and Germane Cognitive Load, (Sweller 2010) </em><em>Compétence</em>**</p>
+<p>l'humain a une charge cognitive limité que l'on peut distinguer en deux catégories. 1- La charge intrinsèque qui mesure la complexité d'un sujet et motivé par le degré d'interactivité, soit le nombre d'élément à prendre en compte en même temps lors de l'apprentissage d'un sujet. 2- La charge étrangère qui mesure l'effet sur la manière dont l'information est présentée. L'idée principale à retenir est que l'utilisateur à une charge cognitive limité, il ne faut pas dépassé son seuil, et ce seuil doit être calculer par l'agent. Puis, que la difficulté d'un sujet doit prendre en compte la difficulté absolue et la maitrise de l'utilisateur. 
+Ainsi, on va utiliser le seuil de charge cognitive comme garde fou à l'agent.</p>
+<p><em>Metacognition and Cognitive Monitoring: A New Area of Cognitive-Developmental Inquiry, (Flavell, 1979) </em><em>Contrôle</em>**</p>
+<p>Cet article est la fondation de la métacognition, soit apprendre comment apprendre. L'auteur décompose la métacognition en 4 parties. L'essentiel à retenir est que les connaissances pures ne sont pas suffisantes pour bien apprendre, la personne doit être alerte de sa propre cognition (métacognition) pour maximiser son apprentissage. 
+Ainsi, le système mémoire de l'agent doit conserver les informations de type métacognitive à propos de l'utilisateur. Selon les 4 parties dans l'article, on doit ainsi conserver en mémoire (1) les connaissances métacognitives de l'utilisateur (à propos de lui, a propos de sa tâche et des strastégies à employés), (2) les habitudes stratégiques de l'utilisateur tel que la relecture, l'auto questionnaire, etc. 
+*Note: La métacognition est un plus grand domaine avec d'autres facteurs à prendre en compte mais trop long pour le temps du projet, mais approfondissement intéressant.</p>
+<p><em>A Survey of Knowledge Tracing: Models, Variants, and Applications, (Shen et al, 2024) </em><em>Compétence</em>**</p>
+<p>Cette enquête explore le domaine du "Knowledge Tracing", soit le processus de prédire si uine personne va répondre correctement à la prochaine question basé sur leur performance du passé sur le sujet. Le domaine du knowledge tracing présente trois formes possible, soit des modèles logistiques, des modèles bayésiens et des modèles d'apprentissage profonds. Dans le cadre  d'un agent dans un monde ouvert, un modèle qui évalue fiablement les capacité sur tous les sujets possible n'est pas encore découvert. Le système mémoire de AI2HI va implémenté une heuristique pour établir le niveau de maitrise d'un sujet. Le modèle va se baser sur les histortiques de conversations précédentes, plus l'utilisateur aura eu de conversation sur un sujet, plus on considera qu'il maitrise. C'est une partie a améliorer dans une recherche futur. </p>
+<p><em>Deliberate Practice and Proposed Limits on the Effects of Practice, (Ericsson et Harwell, 2019) </em><em>Compétence</em>**</p>
+<p>La maitrise de l'humain ne se mesure pas précisément avec un nombre, cette recherche énonce que l'humain est à un stade de maitrise. Les auteurs témoignent explique en profondeur les stades possibles, comment ils se distinguent, comment passer d'un stade à un autre, etc. Ainsi, la représentation du niveau de maitrise est discrète et non continue. 
+Par conséquent, le système mémoire AI2HI va avoir un enumération de niveau de maitrise débutant, intermédiare, avancé et expert. Le niveau va être influencé par l'effet de test, l'historique des converstation, l'espacement entre les sessions, le temps de chaque session etc. </p>
+<p><em>A Theory of Adaptive Scaffolding for LLM-Based Pedagogical Agents, (Cohn et al, 2026)</em></p>
+<p>Cette recherche présente la fine pointe des agents pédagogiques. 3 problèmes majeurs des LLMs standard sont soulevé. (1) LLM chatbot standard manque de fondements stricts en pédagogie, (2) tend a optimiser la réponse immédiatement, ce qui ne laisse pas le temps à l'apprenant d'y réfléchir et (3) ils ont de la difficulté a conserver l'état de l'utilisateur sur de longues convesrsations et plusieurs sessions. 
+Ainsi, le système mémoire de AI2HI agent s'inspirera du framework proposé par les auteurs. Le niveau de scaffolding nécessaire pour un sujet donné sera stocker en mémoire. Sa formation sera fait avec une extraction de la conversation par un LLM pour déterminer le degré de complétion de l'utilisateur (a t-il eu beaucoup d'aide, peu d'aide, aucune aide pour faire la tâche, etc). l'évolution se basera sur l'historique des conversations et le résultats de celles-ci sur un certain sujet. Puis, au début de chaque section, une recherche de sujet sera effectuer pour savoir ou l'utilisateur en était rendu. </p>
+<p><em>A Trainable Spaced Repetition Model for Language Learning, (Settles et Meeder, 2016)</em></p>
+<p>Cette recherche propose un modèle pour modéliser la probabilité de se rappeler du sujet appris dans le temps. Ainsi, on utilisera simplement les résultats trouvé par les auteurs pour calculer les probabilités de rappel d'un sujet.</p>
+<h4 id="revue-litterature-memoire-agentique">Revue littérature mémoire agentique<a class="headerlink" href="#revue-litterature-memoire-agentique" title="Permanent link">&para;</a></h4>
+<p><strong>Memory in the Age of AI Agents,  (Hu et al, 2025)</strong></p>
+<p>Cette enquête est la fondation du projet grâce la définition extrêment complète du domaine de la mémoire présentée. C'est donc la référence de base sur laquelle les idées émergent pour concevoir le système mémoire approprié aux objectifs du projet. Une section complète est dédiée à se papier pour formaliser, poser les bases et définitions de la mémoire agentique. Voir [SECTION]</p>
+<p><strong>My agent understands me better": Integrating Dynamic Human-like Memory Recall and Consolidation in LLM-Based Agents, (Hou et al, 2024)</strong></p>
+<p>Cette recherche propose une nouvelle architecture de système mémoire basé sur la mémoire humaine. Cette architecture permet de récuperer des informations en mémoire selon un modèle mathématique qui mimique les fonctions cognnitives humaines, plutôt que sur l'embedding similarity, comme les LLMs traditionnels. Les auteurs propose un modèle mathématique combinant (1) la pertinence du contexte mesurer via les vecteurs de similarité de texte, (2) le temps écoulé depuis la dernière remémorisation, ce qui replique la courbe de l'oubli chez l'humain, et (3) les répétitions espacées, soit la fréquence entre les rappels dans la mémoire. Le tout permet à l'agent de récupérer en mémoire basé sur le quoi, quand et pourquoi, comme le font les humains, plutôt qu'uniquement par la similiarité, comme le font les LLMs classiques. <br />
+Donc, cette recherche formalise comment mettre en relation de manière efficace tous les concepts cognitifs établis ci-haut. Le système mémoire va donc s'inspirer de ce mécanisme pour unifier les différents concepts cognitifs et calculer le poids de chacun dans le contexte précis pour déterminer l'action à prendre. C'est essentiel pour assurer une mémoire cohérente et éviter que le contexte dérive de l'objectif. </p>
+<p><em>MemGPT: Towards LLMs as Operating Systems, (Packer et al, 2024)</em></p>
+<p>MemGPT propose de traiter la fenêtre de contexte d'un LLM comme la mémoire principale d'un système d'exploitation. Une couche rapide (le contexte) est alimentée par une couche persistante (mémoire externe), avec des appels système (« function calls ») pour paginer l'information entre les deux. Un mécanisme d'interruption permet au modèle de décider quand archiver, récupérer ou résumer. Les expériences montrent un avantage sur l'analyse de documents très longs et sur des conversations multi-sessions où l'agent maintient une relation évolutive avec l'utilisateur.
+C'est une méthodologie intéressante à prendre pour la conception du système mémoire AI2HI agent, du moins, s'en inspirer. </p>
+<p><em>AI Agents vs. Agentic AI: A Conceptual taxonomy, applications and challenges, (Saptoka et al, 2026)</em></p>
+<p>Cette enquête présente les différences et l'évolution entre les agents ia, dédiée à une tâche précise et l'intelligence artificielle agentique, un écosystème complet de plusieurs agents. C'est de bonnes connaissances générales sur le sujet à avoir. La partie sur la mémoire est plus pertinente au projet, tel qu'avoir une mémoire persistente, épisodique partagée et avec des couches de mémoire globales.</p>
 <blockquote>
 <p>Présentez les travaux, approches ou solutions existantes pertinents au projet.<br />
 Comparez les approches identifiées et discutez de leurs forces, limites ou différences.</p>
@@ -819,6 +914,16 @@ Comparez les approches identifiées et discutez de leurs forces, limites ou diff
 <li>besoins ou critères importants.</li>
 </ul>
 </blockquote>
+<p><em>Énoncer et explication du problème</em></p>
+<p>Les agents IA sont des systèmes conçus pour accomplir une tâche désignée spécifique. Ils sont capable de percevoir leur environnement, prendre des décision et exécuter des actions avec des outils. Les agents IA sont en grande émergence dans les dernières années car ils sont extrêmement prommeteur quant à l'amélioration de l'efficacité dans la production de valeurs dans les différents secteurs de la vie. Il accenturait le travail de l'humain en automatisant sa tâche, jusqu'à possiblement le remplacer complétement. Le problème avec cela, est que ce gain en efficacité se fait aux détriments de l'amélioration de l'humain causant ainsi une "dette technique humaine". Pour y remédier, il faut concevoir un agent IA qui considère l'apprentissage de l'humain et pas juste son efficacité. Comme que les agents IA sont encore dans cette phase naissante, ce dernier domaine est très faiblement explorer. Ce projet-ci vise donc à concevoir en partie un agent IA qui accentue et améliore les capacités de l'humain, et non les capacités à accomplir une tâche de manière efficacement sans lui. Comme que construire complètement de bout en bout un agent est une tâche qui requiert beaucoup de temps et de développeur, le projet s'attarde sur la conception d'un des quatres piliers de l'agent, soit la mémoire.</p>
+<p>Ainsi, le projet est la conception d'un système mémoire pour un agent qui considère et maximise human agency.</p>
+<p><em>Limites des approches existantes</em></p>
+<p>L'enjeu principal est qu'il existe beaucup de recherches sur (1) les sciences cognitives pour comprendre comment l'humain apprend et comment faire pour maximiser cette apprentissage. Puis depuis quelques années, (2) la recherche à propos des agents IA, et plus particulièrement leur système mémoire se développe rapidement. De plus, (3) il existe des recherches qualificatives sur le développement d'agent IA centrés humain ert leur bénéfices. Cependant, aucune recherche pour l'instant sur une implémentation concrète d'un système mémoire d'un agent centré humain. Ainsi, l'enjeu pour ce projet est de bien combler l'écart entre la recherche des différentes sphères pour les fusionner ensemble dans l'objectif de concevoir un système mémoire pour cet agent centré humain. </p>
+<p><em>Contraintes</em></p>
+<p>Tel que mentionné plus haut, la contrainte globale est qu'il n'y a aucune approche existante concrète sur l'objectif précis que ce projet veut accomplir. Donc la complexité réside dans la capacité à bien modeler et rassembler les différents concepts de chacun des domaines pour faire un agent centré humain. Pour ce qui est des contraintes plus spécifiques, il y en a quelques une dans chacun des domaines. 
+- 1) Concernant les sciences cognitives, c'est un champ de recherche excessivement complet et avec beaucoup de contenu. il s'avère donc complexe à bien extraire l'information pertinente au projet et de considérer tous les concepts cognitifs positif à l'apprentissage de l'humain. Ainsi, le système mémoire ne considérera pas tous les concepts de sciences cognitives, il sera uniquement composé de quelques concepts primordiaux. L'ajout au système mémoire de d'autres concepts basé sur la science cognitive fera office de travail futur intéressant.<br />
+- 2) Concernant les systèmes mémoires, les agents IA sont contraints aux coûts de computations des LLMs et autres programmes. Donc plus on ajoute de concepts de sciences cognitives à l'agent dans son système mémoire, plus on considère et manipule de données et donc plus les coûts s'accroître. Donc l'efficacité computationnelle est une contrainte à prendre en compte dans ce projet. 
+- 3) Du coté implémentation, il faut garder en mémoire la maitrise de l'utilisateur su un certain sujet. Cependant, comme que l'agent opère dans un monde libre et non restreint comme dans un contexte scolaire par exemple où il y a des matières bien définies, il est impossible de modéliser de manière efficace une techinique pour évaluer le niveau de maitrise pour tous les sujets possibles que l'utilisateur peut aborder avec l'agent (du moins à l'état de l'art actuel). Il faudra donc utiliser une heuristique sous-optimale pour le faire. </p>
 <h3 id="explorations-et-experimentations-preliminaires">Explorations et expérimentations préliminaires<a class="headerlink" href="#explorations-et-experimentations-preliminaires" title="Permanent link">&para;</a></h3>
 <p>(EN COURS D'ÉCRITURE)</p>
 <p>Les agents ont tous un systemes de memoire different base sur les 3 compoisantes de la taxomnomie de la memoire dependant des fonctions et du role de l'agent. Dans le cas du projet, l'agent a comme objectif de considerer la croissance des connaissances de l'agent doit donc avoir une base de connaissance de l'humain pour etre en mesure detablir son degre de connaissance dans les sujets de discussions quil a avec. Ainsi, la question qui se pose est quel est le systeme de memoire le plus envisageable pour concevoir cette base de connaissance. Ainsi, des recherches et des reflexions on ete effectue pour determiner cela. </p>
