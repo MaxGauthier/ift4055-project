@@ -541,18 +541,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#structure-suggeree" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Structure suggérée
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Structure suggérée">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#methodologie-devaluation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -562,8 +550,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#resultats-obtenus" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -573,8 +561,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#analyse-et-interpretation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -584,8 +572,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#limites-du-projet" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -593,11 +581,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -636,18 +619,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#structure-suggeree" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Structure suggérée
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Structure suggérée">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#methodologie-devaluation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -657,8 +628,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#resultats-obtenus" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -668,8 +639,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#analyse-et-interpretation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -679,8 +650,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#limites-du-projet" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -688,11 +659,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -725,62 +691,43 @@
 </style>
 
 <h1 id="evaluation">Évaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p><img alt="💡" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f4a1.png" title=":bulb:" /> Cette page sert à présenter comment le projet a été évalué, analysé ou validé.
-Elle ne remplace pas le rapport final, mais permet de documenter progressivement les résultats obtenus et leur interprétation.</p>
-</blockquote>
-<h2 id="structure-suggeree">Structure suggérée<a class="headerlink" href="#structure-suggeree" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>La structure suivante est donnée à titre indicatif.<br />
-Vous pouvez l’adapter selon la nature du projet.</p>
-</blockquote>
 <h3 id="methodologie-devaluation">Méthodologie d’évaluation<a class="headerlink" href="#methodologie-devaluation" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>Expliquez comment le projet a été évalué :</p>
+<p>Tout le dispositif est hors ligne. Aucun vrai utilisateur, donc ni retours utilisateurs ni études de cas. Le gabarit les demande, mais ce projet ne pouvait pas les produire dans le temps disponible. C'est la faille principale du projet. Trouver comment évaluer le système était immensément complexe du aux nombreuse contraites autantt </p>
+<p>L'approche est celle de la recherche par la conception. On construit l'artefact et on démontre ce qu'il fait, plutôt que de valider des hypothèses au sens classique. Le protocole est découpé en quatre volets, un par composant, pour savoir lequel casse quand un résultat est pas bon.</p>
+<ol>
+<li><strong>Invariants structurels.</strong> Le module d'estimation respecte-t-il les propriétés qu'il doit tenir par définition ? Par exemple, la maitrise d'un concept délaissé doit décroitre avec le temps.</li>
+<li><strong>Fidélité de l'extraction.</strong> À partir de la seule transcription, le système retrouve-t-il le niveau depuis lequel un persona a été écrit ? Cinq personas écrits à la main selon l'échelle de Dreyfus, plus un sixième en contrôle négatif.</li>
+<li><strong>Ancre de knowledge tracing.</strong> L'estimateur reçoit l'historique réel d'un élève du corpus ASSISTments jusqu'à un instant t et doit prédire la réussite au coup suivant. On compare à BKT, ajusté sur les mêmes données.</li>
+<li><strong>Politique d'échafaudage.</strong> La politique choisit-elle le bon niveau d'aide, et ce niveau se retrouve-t-il dans la réponse produite ? Quatre profils, du novice à l'expert, avec le bon niveau fixé d'avance.</li>
+</ol>
+<p>Une règle maitraisse encadre l'évaluation.</p>
 <ul>
-<li>scénarios d’utilisation ;</li>
-<li>tests ;</li>
-<li>mesures quantitatives ;</li>
-<li>analyses qualitatives ;</li>
-<li>comparaison d’approches ;</li>
-<li>validation expérimentale ;</li>
-<li>retours utilisateurs ;</li>
-<li>études de cas.</li>
+<li>Le système ne s'auto-évalue jamais. Quand un modèle sert de juge, il extrait des faits et c'est le code qui rend le verdict.</li>
 </ul>
-</blockquote>
 <h3 id="resultats-obtenus">Résultats obtenus<a class="headerlink" href="#resultats-obtenus" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>Présentez les principaux résultats :</p>
-<ul>
-<li>observations ;</li>
-<li>performances ;</li>
-<li>comportements observés ;</li>
-<li>comparaisons ;</li>
-<li>résultats expérimentaux.</li>
-</ul>
-</blockquote>
+<ol>
+<li><strong>Invariants structurels : oui.</strong> 24 vérifications, toutes passées. Aucune n'a été relâchée ni retirée du lot.</li>
+<li><strong>Fidélité de l'extraction : en partie.</strong> Le niveau exact est retrouvé dans 3 cas sur 5 par récupération, et l'écart ne dépasse jamais un échelon. En lecture stricte par nom, ça tombe à 2 sur 5. Sur les signaux émis, précision de 0,68 et rappel de 0,41. Avec un modèle de 14B au lieu de 32B, le rappel tombe à 0,30 et la précision monte à 0,73.</li>
+<li><strong>Ancre de knowledge tracing : non.</strong> Aire sous la courbe de 0,666 pour AI2HI contre 0,726 pour BKT, avec des intervalles de confiance disjoints. La parité n'est pas atteinte. Le système bat quand même l'a priori seul, en passant de 0,624 à 0,666.</li>
+<li><strong>Politique d'échafaudage : partagée.</strong> 4/4 au choix du niveau, mais 0,50 dans le texte produit, soit à égalité avec la meilleure politique fixe. La requête de l'utilisateur est exécutée dans les 16 cas, et il n'y a jamais moins d'aide que nécessaire.</li>
+</ol>
 <h3 id="analyse-et-interpretation">Analyse et interprétation<a class="headerlink" href="#analyse-et-interpretation" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>Discutez des résultats obtenus :</p>
-<ul>
-<li>les objectifs ont-ils été atteints ?</li>
-<li>quels éléments ont bien fonctionné ?</li>
-<li>quelles limites ont été observées ?</li>
-<li>quels résultats étaient inattendus ?</li>
-</ul>
-</blockquote>
+<p>Les objectifs sont-ils atteints ?Ceux du projet, oui. Le cadre théorique est posé, le modèle de maitrise et la politique sont conçus puis implémentés, le protocole hors ligne est construit et exécuté. Ce qui n'est pas atteint, c'est la démonstration de bout en bout. La chaine tient jusqu'au choix du niveau d'échafaudage et s'arrête là.</p>
+<p>Ce qui a bien marché. Le module d'estimation se comporte comme spécifié. La politique choisit le bon niveau à tous les coups. Et l'état de maitrise propre à chaque élève apporte une information réelle, le gain de 0,042 sur l'a priori seul le montre.</p>
+<p>L'écart avec BKT s'explique. Trois raisons. BKT ajuste ses paramètres sur 2 914 élèves du corpus, AI2HI n'en ajuste aucun. Le corpus est fait d'exercices structurés, soit exactement le terrain pour lequel BKT a été conçu. Et la force de stockage d'AI2HI ne redescend jamais après un échec, par choix de conception, alors que BKT la révise à la baisse à chaque erreur. Ce qui reste acquis, c'est que la valeur de l'estimateur tient à l'ordre qu'il produit et non à l'exactitude de la probabilité qu'il annonce. C'est justement ce que le système lui demande.</p>
+<p>Le résultat le plus inattendu. Un problème de nommage, pas de modélisation. L'extracteur a nommé son sujet <code>asyncio-concurrency</code> là où la banque disait <code>python-asyncio</code>. Même sujet, deux noms. Comme le système compare les noms tels quels, aucun rapprochement n'est possible, et ce seul écart fait tomber la lecture stricte à 2 personas sur 5. C'est ce qui redonne de l'intérêt à une hiérarchie ou à un graphe de concepts, écartés plus tôt pour la simplicité.</p>
+<p>L'autre écart, dans le texte produit. Le niveau choisi est transmis au modèle sous forme de consigne dans l'invite système. Un modèle serviable suit mal une consigne qui lui demande d'en dire moins. Le sens de l'erreur appuie cette lecture, puisque c'est toujours un excès d'enseignement et jamais un manque. La piste d'amélioration est un moyen plus contraignant que la consigne.</p>
 <h3 id="limites-du-projet">Limites du projet<a class="headerlink" href="#limites-du-projet" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>Présentez les principales limites :</p>
 <ul>
-<li>contraintes techniques ;</li>
-<li>taille des données ;</li>
-<li>hypothèses ;</li>
-<li>portée limitée ;</li>
-<li>temps disponible ;</li>
-<li>biais possibles.</li>
+<li>Sur les quatre volets, un seul confronte le système à des données extérieures au projet, et c'est celui qui conclut à un écart. Les autres vérifient que le code respecte une spécification que le projet a lui-même posée. Cette garantie reste nécessaire, mais elle n'établit pas la justesse de ce que le système estime.</li>
+<li>Cinq personas au deuxième volet, quatre profils au quatrième. Avec si peu, la comparaison entre politiques ne tranche pas.</li>
+<li>ASSISTments est un corpus d'exercices structurés et non de la conversation ouverte, qui est pourtant le contexte visé.</li>
+<li>C'est hors de portée d'un protocole hors ligne. Il faudrait une étude auprès de vrais utilisateurs.</li>
+<li>Trois signaux et deux sessions pour les gardes de maitrise. Aucune mesure n'établit que ce sont les bonnes valeurs.</li>
+<li>Ils viennent tous de travaux établis, mais on n'a jamais comparé cet assemblage à un autre.</li>
+<li>La qualité de l'extraction tient d'abord au LLM utilisé. Deux points de mesure, 14B et 32B, ne suffisent pas à établir une tendance.</li>
+<li>La compétence n'est qu'une des six dimensions du cadre 6C. Les cinq autres ne sont pas traitées.</li>
 </ul>
-</blockquote>
 
 
 
